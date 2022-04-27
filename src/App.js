@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import MadlibForm from "./MadlibForm";
+import Madlib from "./Madlib";
 
 function App() {
+  const addCommas = (number) => {
+    return number.toLocaleString();
+  };
+  console.log(addCommas(-3243423));
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Madlib />
     </div>
   );
 }
